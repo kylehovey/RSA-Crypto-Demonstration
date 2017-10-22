@@ -1,5 +1,12 @@
+/**
+ * Very simple RSA implementation written for USU FSLC demonstration
+ *
+ * Author: Kyle Hovey
+ */
+
 // Them good good functions
 _ = require('lodash');
+
 
 /**
  * RSA relies on numbers being prime, so it would only make sense that
@@ -29,7 +36,7 @@ function randomPrime(min = 0, max = 1e6) {
   let out;
   do {
     out = _.random(min, max);
-  } while (!isPrime(out))
+  } while (!isPrime(out));
 
   return out;
 }
